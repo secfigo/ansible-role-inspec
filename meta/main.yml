@@ -3,6 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: secfigo
+  role_name: inspec
   description: "Inspec Ansible role for Linux"
   company: "Practical DevSecOps"
   license: "license (MIT)"
@@ -11,16 +12,8 @@ galaxy_info:
     - name: Ubuntu
       versions:
       - all
-    - name: Debian
-      versions:
-      - all
   galaxy_tags:
-    - development
-    - system
-    - image
-    - compliance-as-code 
-    - droplet
-    - packaging
-    - build
-    - inspec 
+    - security 
+    - compliance
+    - inspec
     - chef 
