@@ -1,0 +1,15 @@
+---
+
+# https://packages.chef.io/files/stable/inspec/4.18.104/ubuntu/18.04/inspec_4.18.104-1_amd64.deb
+
+- debug:
+    msg: "{{ ansible_distribution }}"
+- debug:
+    msg: "{{ ansible_distribution_major_version }}"
+- debug:
+    msg: "{{ ansible_distribution_version }}"
+
+- name: Download and Install Inspec Deb Package
+  apt:
+    deb: https://packages.chef.io/files/stable/inspec/{{ inspec_version }}/ubuntu/{{ ansible_distribution_major_version }}/inspec_{{ inspec_version }}-1_amd64.deb
+  # when: currentInspecVersion.rc != 0
