@@ -30,6 +30,17 @@ None.
       roles:
         - secfigo.inspec
 
+## Testing it locally using Vagrant
+
+```bash
+virtualenv --python python3 env
+source env/bin/activate
+pip3 install ansible 
+vagrant up 
+or 
+vagrant provision
+```
+
 ## License
 
 MIT
